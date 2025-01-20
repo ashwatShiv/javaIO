@@ -8,9 +8,9 @@ public class Input {
         try {
             File sourceFile = new File("sourceFile.txt");
             if (!sourceFile.exists()) {
-                System.out.println("Current working directory: " + System.getProperty("user.dir"));
 
-                System.out.println("sourceFile.txt does not exist!");
+
+                System.out.println("File does not exist!");
                 return;
             }
 
@@ -22,7 +22,7 @@ public class Input {
                 destination.write(temp);
             }
 
-            System.out.println("File copied successfully.");
+            System.out.println("Programmed successfully");
         } finally {
             if (source != null) {
                 source.close();
